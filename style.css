@@ -1,0 +1,40 @@
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ #ho{
+
+      color: rgb(255, 255, 255);
+      
+  }
+  #ho:hover{
+      text-align: center;
+      width: 100px;
+      background-color: rgba(76,160,46,1);
+      border-radius: 20px;
+      color: white;
+      filter: drop-shadow(0 0 0.3rem rgb(20, 220, 103));
+  }
+  .navbar .navbar-expand-lg .navbar-light .bg-light{
+      background-color: rgb(50, 50,50);
+  }
+  li{
+      margin-right: 3rem;
+  }
+  .dope {
+    max-width: 100%;
+    width:100%;
+    position: absolute;
+    left: 0;
+    
+   }
+
+   .carousel-control-prev{
+    overflow: hidden;;
+   }

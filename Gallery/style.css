@@ -1,0 +1,221 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  color: white;
+}
+
+.transparent-bg {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.trans-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  will-change: opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.trans-bg-active {
+  opacity: 0.35;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: translate3d(105vw, 0, 0);
+          transform: translate3d(105vw, 0, 0);
+  will-change: transform, opacity;
+  z-index: 1;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.caption {
+  background: rgba(243, 109, 0, 0.993);
+  padding: 7px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 2%;
+  left: 95%;
+}
+.caption a{
+  text-decoration: none;
+}
+
+.photo-0 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/20190119_102007Alzayany_Royal_Palace.jpg);
+}
+
+.photo-1 {
+  background-image: url(https://pbs.twimg.com/media/DbcvlhsVMAAQkku.jpg:large);
+}
+
+.photo-2 {
+  background-image: url(https://mapio.net/images-p/134210425.jpg);
+}
+
+.photo-3 {
+  background-image: url(https://live.staticflickr.com/8408/29706010423_c50b87aa3a_b.jpg);
+}
+
+.photo-4 {
+  background-image: url(https://live.staticflickr.com/8577/30040690650_fd6026ff54_b.jpg);
+}
+
+.photo-5 {
+  background-image: url(https://live.staticflickr.com/7519/29707236814_1a699c2a29_b.jpg);
+}
+.photo-6 {
+  background-image: url(https://farm5.staticflickr.com/4886/45703337391_a1c72b9225_b.jpg);
+}
+.photo-7 {
+  background-image: url(2.jpg);
+}
+.photo-8 {
+  background-image: url(3.jpg)
+}
+.photo-9 {
+  background-image: url(8.jpg);
+}
+.photo-10 {
+  background-image: url(9.jpg);
+}
+.photo-11 {
+  background-image: url(11.jpg);
+}
+.photo-12 {
+  background-image: url(12.jpg);
+}
+.photo-13 {
+  background-image: url(13.jpg);
+}
+.photo-14{
+  background-image: url(15.jpg);
+}
+.photo-15{
+  background-image: url(17.jpg);
+}
+.photo-16 {
+  background-image: url(19.jpg);
+}
+.photo-17 {
+  background-image: url(20.jpg);
+}
+.photo-18 {
+  background-image: url(22.jpg);
+}
+.photo-19 {
+  background-image: url(23.jpg);
+}
+.photo-20 {
+  background-image: url(892F4EF7-8FC0-476B-8C29-03EE2DD713EF.jpg);
+}
+.photo-21 {
+  background-image: url(dfdsf.jpg);
+}
+.photo-22 {
+  background-image: url(dsfd.jpg);
+}
+.photo-23 {
+  background-image: url(fghgfhfgh.jpg);
+}
+.photo-24 {
+  background-image: url(qsdqsdd.jpg);
+}
+.photo-25 {
+  background-image: url(sdfdsfdsf.jpg);
+}
+.photo-26 {
+  background-image: url(tyrtytrytr.png);
+}
+
+
+.photo-active {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.photo-left {
+  -webkit-transform: translate3d(-105vw, 0, 0);
+          transform: translate3d(-105vw, 0, 0);
+}
+
+.animation {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.indicator {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform: translate(-50%, -102%);
+          transform: translate(-50%, -102%);
+  padding: 2px;
+  border-radius: 4px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
